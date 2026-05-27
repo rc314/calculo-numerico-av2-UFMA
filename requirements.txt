@@ -1,0 +1,2 @@
+# A avaliação pede implementação com estruturas nativas.
+# O projeto não depende de numpy, scipy ou bibliotecas externas.

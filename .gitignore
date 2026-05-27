@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Ambientes locais
+.venv/
+venv/
+env/
+
+# Saídas geradas durante testes
+outputs/
+resultados/
+
+# Sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
