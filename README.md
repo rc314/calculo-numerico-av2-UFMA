@@ -25,7 +25,7 @@ acompanhar a ordem das aulas e manter o histórico de commits organizado.
 ## Estrutura do repositório
 
 - `datasets/`: arquivos CSV com os dados dos problemas da avaliação.
-- `docs/`: resumo da avaliação e plano incremental de implementação.
+- `docs/`: resumo da avaliação, plano incremental e arquivo para registrar os resultados.
 - `src/`: espaço reservado para os códigos dos métodos numéricos.
 
 ## Etapa inicial
@@ -46,3 +46,6 @@ Objetivo inicial:
 
 O repositório ainda não contém as implementações dos métodos. A base está pronta
 para receber os códigos conforme os conteúdos forem avançando nas aulas.
+
+Quando os códigos forem implementados, as saídas usadas para comprovar o
+funcionamento devem ser registradas em `docs/resultados_codigo.txt`.

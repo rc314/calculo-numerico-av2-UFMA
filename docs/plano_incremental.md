@@ -17,6 +17,7 @@ pequenos, cada um com um método ou avanço bem definido.
 - [ ] Implementar trapézios repetidos.
 - [ ] Implementar regra 1/3 de Simpson.
 - [ ] Implementar quadratura de Gauss para `n = 2` e `n = 3`.
+- [ ] Registrar as saídas dos códigos em `docs/resultados_codigo.txt`.
 - [ ] Revisar README, exemplos de execução e resultados finais.
 
 ## Organização dos commits

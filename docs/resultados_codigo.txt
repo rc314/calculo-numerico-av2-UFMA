@@ -1,0 +1,151 @@
+RESULTADOS DO CODIGO - AV2 CALCULO NUMERICO
+
+Aluno: Richard Christopher Lima Mendes
+Curso: Ciencia da Computacao
+Disciplina: Calculo Numerico
+
+Este arquivo fica reservado para registrar as saidas dos codigos da avaliacao.
+A ideia e guardar uma prova simples de que cada metodo foi executado e retornou
+um resultado.
+
+Como preencher depois de cada implementacao:
+
+1. Informar o metodo implementado.
+2. Informar o dataset usado.
+3. Informar o comando executado.
+4. Colar a saida exibida pelo programa.
+5. Colocar uma observacao curta dizendo se o resultado bate com o esperado.
+
+=====================================================================
+1. INTERPOLACAO - LAGRANGE E NEWTON
+=====================================================================
+
+Dataset:
+datasets/01_drone_altitude_interpolacao.csv
+
+Objetivo:
+Interpolar a altitude no instante x = 3.5 s.
+
+Comando executado:
+Ainda nao implementado.
+
+Saida do programa:
+Ainda nao implementado.
+
+Observacao:
+Pendente ate o metodo ser visto e implementado.
+
+=====================================================================
+2. INTERPOLACAO - GREGORY-NEWTON
+=====================================================================
+
+Dataset:
+datasets/02_servidor_temperatura_gregory_newton.csv
+
+Objetivo:
+Estimar a temperatura no minuto 25.
+
+Comando executado:
+Ainda nao implementado.
+
+Saida do programa:
+Ainda nao implementado.
+
+Observacao:
+Pendente ate o metodo ser visto e implementado.
+
+=====================================================================
+3. SPLINES LINEAR E CUBICA NATURAL
+=====================================================================
+
+Dataset:
+datasets/03_laser_splines.csv
+
+Objetivo:
+Interpolar a posicao do laser no instante t = 1.5 s.
+
+Comando executado:
+Ainda nao implementado.
+
+Saida do programa:
+Ainda nao implementado.
+
+Observacao:
+Pendente ate o metodo ser visto e implementado.
+
+=====================================================================
+4. AJUSTE DE CURVAS - MINIMOS QUADRADOS
+=====================================================================
+
+Dataset:
+datasets/04_trafego_rede_mmq.csv
+
+Objetivo:
+Encontrar a reta P1(x) = ax + b e prever o trafego para x = 13 h.
+
+Comando executado:
+Ainda nao implementado.
+
+Saida do programa:
+Ainda nao implementado.
+
+Observacao:
+Pendente ate o metodo ser visto e implementado.
+
+=====================================================================
+5. INTEGRACAO - NEWTON-COTES 3/8 DE SIMPSON
+=====================================================================
+
+Dataset:
+datasets/05_transferencia_simpson_3_8.csv
+
+Objetivo:
+Calcular o total de dados transferidos em MB.
+
+Comando executado:
+Ainda nao implementado.
+
+Saida do programa:
+Ainda nao implementado.
+
+Observacao:
+Pendente ate o metodo ser visto e implementado.
+
+=====================================================================
+6. INTEGRACAO - TRAPEZIOS E SIMPSON 1/3
+=====================================================================
+
+Dataset:
+datasets/06_carro_eletrico_integracao.csv
+
+Objetivo:
+Calcular a distancia total percorrida usando os 5 pontos do dataset.
+
+Comando executado:
+Ainda nao implementado.
+
+Saida do programa:
+Ainda nao implementado.
+
+Observacao:
+Pendente ate o metodo ser visto e implementado.
+
+=====================================================================
+7. INTEGRACAO - QUADRATURA DE GAUSS
+=====================================================================
+
+Dataset:
+datasets/07_torque_motor_gauss.csv
+
+Objetivo:
+Calcular a integral de f(x) = 5x^3 + x^2 - 12x + 4 no intervalo [-1, 1],
+usando n = 2 pontos.
+
+Comando executado:
+Ainda nao implementado.
+
+Saida do programa:
+Ainda nao implementado.
+
+Observacao:
+Pendente ate o metodo ser visto e implementado.
