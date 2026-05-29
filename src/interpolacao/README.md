@@ -1,13 +1,26 @@
-# Interpolação
+# Interpolacao
 
-Pasta para os métodos de interpolação da avaliação.
+Pasta para os metodos de interpolacao da avaliacao.
 
-Primeira implementação planejada:
+Implementacoes disponiveis:
 
-- Lagrange e Newton com o dataset `datasets/01_drone_altitude_interpolacao.csv`.
+- Lagrange;
+- Newton por diferencas divididas;
+- Gregory-Newton por diferencas finitas.
 
-Métodos que devem entrar depois:
+Comando principal:
 
-- Gregory-Newton;
+```bash
+python -m src.interpolacao.executar_interpolacao
+```
+
+Testes:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Metodos que devem entrar depois:
+
 - spline linear;
-- spline cúbica natural.
+- spline cubica natural.

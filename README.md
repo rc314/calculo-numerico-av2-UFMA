@@ -44,8 +44,11 @@ Objetivo inicial:
 
 ## Situação atual
 
-O repositório ainda não contém as implementações dos métodos. A base está pronta
-para receber os códigos conforme os conteúdos forem avançando nas aulas.
+A parte de interpolação polinomial já contém as primeiras implementações:
 
-Quando os códigos forem implementados, as saídas usadas para comprovar o
-funcionamento devem ser registradas em `docs/resultados_codigo.txt`.
+- Lagrange;
+- Newton por diferenças divididas;
+- Gregory-Newton por diferenças finitas.
+
+As saídas usadas para comprovar o funcionamento foram registradas em
+`docs/resultados_codigo.txt`.

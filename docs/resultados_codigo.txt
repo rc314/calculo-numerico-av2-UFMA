@@ -27,13 +27,31 @@ Objetivo:
 Interpolar a altitude no instante x = 3.5 s.
 
 Comando executado:
-Ainda nao implementado.
+python -m src.interpolacao.executar_interpolacao
 
 Saida do programa:
-Ainda nao implementado.
+Pontos usados: 5 pontos, polinomio de grau 4
+Alvo: x = 3.5 s
+
+Tabela de diferencas divididas:
+      1.200000 |     0.700000 |     0.300000 |     0.066667 |    -0.041667
+      1.900000 |     1.300000 |     0.500000 |    -0.100000
+      3.200000 |     2.300000 |     0.200000
+      5.500000 |     2.700000
+      8.200000
+
+Coeficientes de Newton:
+  1.2, 0.7, 0.3, 0.0666666667, -0.0416666667
+
+Resultado por Lagrange: 4.2390625 m
+Resultado por Newton:   4.2390625 m
+Diferenca absoluta entre os metodos: 0.000000000000
+Maior erro de Lagrange nos nos conhecidos: 0.000000000000
+Maior erro de Newton nos nos conhecidos:   0.000000000000
 
 Observacao:
-Pendente ate o metodo ser visto e implementado.
+Os dois metodos retornaram o mesmo valor e reproduziram exatamente os pontos
+conhecidos do dataset.
 
 =====================================================================
 2. INTERPOLACAO - GREGORY-NEWTON
@@ -46,13 +64,26 @@ Objetivo:
 Estimar a temperatura no minuto 25.
 
 Comando executado:
-Ainda nao implementado.
+python -m src.interpolacao.executar_interpolacao
 
 Saida do programa:
-Ainda nao implementado.
+Pontos igualmente espacados: h = 10
+Alvo: x = 25 min
+
+Tabela de diferencas finitas:
+     45.000000 |     7.000000 |     1.000000 |     2.000000
+     52.000000 |     8.000000 |     3.000000
+     60.000000 |    11.000000
+     71.000000
+
+Resultado por Gregory-Newton: 55.75 C
+Conferencia com Newton:       55.75 C
+Diferenca absoluta entre os metodos: 0.000000000000
+Maior erro de Gregory-Newton nos nos conhecidos: 0.000000000000
 
 Observacao:
-Pendente ate o metodo ser visto e implementado.
+O espacamento e constante, entao Gregory-Newton e aplicavel. A resposta bateu
+com a formula de Newton e o polinomio reproduziu todos os pontos conhecidos.
 
 =====================================================================
 3. SPLINES LINEAR E CUBICA NATURAL
