@@ -1,14 +1,14 @@
-# Interpolacao
+# Interpolação
 
-Pasta para os metodos de interpolacao da avaliacao.
+Esta pasta reúne os métodos de interpolação da avaliação.
 
-Implementacoes disponiveis:
+Implementações disponíveis:
 
 - Lagrange;
-- Newton por diferencas divididas;
-- Gregory-Newton por diferencas finitas.
+- Newton por diferenças divididas;
+- Gregory-Newton por diferenças finitas;
 - spline linear;
-- spline cubica natural.
+- spline cúbica natural.
 
 Comando principal:
 
@@ -22,6 +22,5 @@ Testes:
 python -m unittest discover -s tests -v
 ```
 
-Metodos que devem entrar depois:
-
-- integracao com outros metodos numericos da AV2.
+Os métodos de integração numérica estão organizados separadamente em
+`src/integracao/`.

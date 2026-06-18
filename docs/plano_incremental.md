@@ -7,9 +7,9 @@ pequenos, cada um com um método ou avanço bem definido.
 ## Sequência sugerida
 
 - [x] Organizar estrutura inicial do repositório, datasets e documentação.
-- [ ] Implementar interpolação por Lagrange para o dataset do drone.
-- [ ] Implementar interpolação por Newton para o dataset do drone.
-- [ ] Implementar Gregory-Newton para pontos igualmente espaçados.
+- [x] Implementar interpolação por Lagrange para o dataset do drone.
+- [x] Implementar interpolação por Newton para o dataset do drone.
+- [x] Implementar Gregory-Newton para pontos igualmente espaçados.
 - [x] Implementar spline linear.
 - [x] Implementar spline cúbica natural.
 - [x] Implementar ajuste linear por mínimos quadrados.

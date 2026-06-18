@@ -22,13 +22,13 @@ próprias dos métodos e testes automatizados.
 
 - `datasets/`: arquivos CSV com os dados dos problemas da avaliação.
 - `docs/`: resumo da avaliação, plano incremental e arquivo para registrar os resultados.
-- `src/`: espaço reservado para os códigos dos métodos numéricos.
+- `src/`: implementações dos métodos numéricos, separadas por assunto.
 
-## Etapa inicial
+## Primeira etapa do desenvolvimento
 
-O assunto visto até agora foi interpolação polinomial, principalmente a ideia de
-aproximar uma função a partir de pontos conhecidos. Por isso, o primeiro código a
-entrar no projeto deve ser o problema de altitude do drone, usando Lagrange e Newton.
+A primeira etapa abordou interpolação polinomial, principalmente a ideia de
+aproximar uma função a partir de pontos conhecidos. O primeiro problema implementado
+foi o de altitude do drone, usando Lagrange e Newton.
 
 Dataset inicial:
 
@@ -44,10 +44,10 @@ As implementações atuais já contêm:
 
 - Lagrange;
 - Newton por diferenças divididas;
-- Gregory-Newton por diferenças finitas.
+- Gregory-Newton por diferenças finitas;
 - spline linear;
 - spline cúbica natural;
-- mínimos quadrados com ajuste linear, polinomial e modelos linearizados.
+- mínimos quadrados com ajuste linear, polinomial e modelos linearizados;
 - regra 3/8 de Simpson;
 - trapézios simples e repetidos;
 - regra 1/3 de Simpson;

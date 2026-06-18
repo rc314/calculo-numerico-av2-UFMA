@@ -1,19 +1,17 @@
 # Código-fonte
 
-Esta pasta fica reservada para os algoritmos da avaliação.
+Esta pasta reúne os algoritmos implementados para a avaliação.
 
-A organização inicial é por assunto:
+A organização é feita por assunto:
 
 - `interpolacao/`
 - `ajuste_curvas/`
 - `integracao/`
 
-Os códigos entram aqui conforme cada método for apresentado em aula.
+Implementações disponíveis:
 
-Implementacoes atuais:
-
-- interpolacao polinomial;
-- splines linear e cubica natural;
-- ajuste de curvas por minimos quadrados.
+- interpolação polinomial;
+- splines linear e cúbica natural;
+- ajuste de curvas por mínimos quadrados;
 - integração por trapézios e Simpson;
 - quadratura de Gauss-Legendre.
