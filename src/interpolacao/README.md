@@ -7,6 +7,8 @@ Implementacoes disponiveis:
 - Lagrange;
 - Newton por diferencas divididas;
 - Gregory-Newton por diferencas finitas.
+- spline linear;
+- spline cubica natural.
 
 Comando principal:
 
@@ -22,5 +24,4 @@ python -m unittest discover -s tests -v
 
 Metodos que devem entrar depois:
 
-- spline linear;
-- spline cubica natural.
+- integracao com outros metodos numericos da AV2.

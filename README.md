@@ -44,11 +44,22 @@ Objetivo inicial:
 
 ## Situação atual
 
-A parte de interpolação polinomial já contém as primeiras implementações:
+A parte de interpolação e ajuste de curvas já contém:
 
 - Lagrange;
 - Newton por diferenças divididas;
 - Gregory-Newton por diferenças finitas.
+- spline linear;
+- spline cúbica natural;
+- mínimos quadrados com ajuste linear, polinomial e modelos linearizados.
+
+Comandos principais:
+
+```bash
+python -m src.interpolacao.executar_interpolacao
+python -m src.ajuste_curvas.executar_ajuste_curvas
+python -m unittest discover -s tests -v
+```
 
 As saídas usadas para comprovar o funcionamento foram registradas em
 `docs/resultados_codigo.txt`.

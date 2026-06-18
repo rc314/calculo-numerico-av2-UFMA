@@ -96,13 +96,35 @@ Objetivo:
 Interpolar a posicao do laser no instante t = 1.5 s.
 
 Comando executado:
-Ainda nao implementado.
+python -m src.interpolacao.executar_interpolacao
 
 Saida do programa:
-Ainda nao implementado.
+Alvo: x = 1.5 s
+
+Trechos da spline linear no formato a + b*(x - xi):
+  S1(x) = 2.5 + 2*(x - 0), x em [0, 1]
+  S2(x) = 4.5 - 1.5*(x - 1), x em [1, 2]
+  S3(x) = 3 + 3*(x - 2), x em [2, 3]
+
+Segundas derivadas M_i da spline cubica natural:
+  0, -7.4, 8.6, 0
+
+Trechos da spline cubica natural no formato a + b*(x - xi) + c*(x - xi)^2 + d*(x - xi)^3:
+  S1(x) = 2.5 + 3.2333333333*(x - 0) + 0*(x - 0)^2 - 1.2333333333*(x - 0)^3, x em [0, 1]
+  S2(x) = 4.5 - 0.4666666667*(x - 1) - 3.7*(x - 1)^2 + 2.6666666667*(x - 1)^3, x em [1, 2]
+  S3(x) = 3 + 0.1333333333*(x - 2) + 4.3*(x - 2)^2 - 1.4333333333*(x - 2)^3, x em [2, 3]
+
+Resultado por spline linear:          3.75 cm
+Resultado por spline cubica natural:  3.675 cm
+Maior erro da spline linear nos nos conhecidos:         0.000000000000
+Maior erro da spline cubica natural nos nos conhecidos: 0.000000000000
+Maior salto em S nos nos internos:    0.000000000000
+Maior salto em S' nos nos internos:   0.000000000000
+Maior salto em S'' nos nos internos:  0.000000000000
 
 Observacao:
-Pendente ate o metodo ser visto e implementado.
+As duas splines reproduziram exatamente os nos conhecidos. A spline cubica
+natural tambem manteve continuidade de S, S' e S'' nos nos internos.
 
 =====================================================================
 4. AJUSTE DE CURVAS - MINIMOS QUADRADOS
@@ -115,13 +137,39 @@ Objetivo:
 Encontrar a reta P1(x) = ax + b e prever o trafego para x = 13 h.
 
 Comando executado:
-Ainda nao implementado.
+python -m src.ajuste_curvas.executar_ajuste_curvas
 
 Saida do programa:
-Ainda nao implementado.
+Modelo: P1(x) = a*x + b
+Alvo: x = 13 h
+
+Equacoes normais:
+Matriz:
+      5.000000 |    50.000000
+     50.000000 |   510.000000
+Termos independentes:
+  16.8, 174.6
+
+Coeficiente angular a: 0.66
+Coeficiente linear b:  -3.24
+Reta ajustada: P1(x) = 0.66*x - 3.24
+
+Pontos, estimativas e residuos:
+  x=   8 | y=   2.1 | estimado=    2.04 | residuo=    0.06
+  x=   9 | y=   2.8 | estimado=     2.7 | residuo=     0.1
+  x=  10 | y=   3.1 | estimado=    3.36 | residuo=   -0.26
+  x=  11 | y=     4 | estimado=    4.02 | residuo=   -0.02
+  x=  12 | y=   4.8 | estimado=    4.68 | residuo=    0.12
+
+Previsao para x = 13 h: 5.34 mil acessos
+Soma dos quadrados dos erros: 0.096
+Coeficiente de determinacao R^2: 0.9784366577
+Soma dos residuos: 0.000000000000
+Soma de x*residuo: 0.000000000000
 
 Observacao:
-Pendente ate o metodo ser visto e implementado.
+A reta ajustada foi P1(x) = 0.66*x - 3.24. As somas dos residuos e de
+x*residuo ficaram zero, como esperado pelas equacoes normais do ajuste linear.
 
 =====================================================================
 5. INTEGRACAO - NEWTON-COTES 3/8 DE SIMPSON

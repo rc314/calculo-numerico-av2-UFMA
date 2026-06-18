@@ -10,9 +10,9 @@ pequenos, cada um com um método ou avanço bem definido.
 - [ ] Implementar interpolação por Lagrange para o dataset do drone.
 - [ ] Implementar interpolação por Newton para o dataset do drone.
 - [ ] Implementar Gregory-Newton para pontos igualmente espaçados.
-- [ ] Implementar spline linear.
-- [ ] Implementar spline cúbica natural.
-- [ ] Implementar ajuste linear por mínimos quadrados.
+- [x] Implementar spline linear.
+- [x] Implementar spline cúbica natural.
+- [x] Implementar ajuste linear por mínimos quadrados.
 - [ ] Implementar regra 3/8 de Simpson.
 - [ ] Implementar trapézios repetidos.
 - [ ] Implementar regra 1/3 de Simpson.

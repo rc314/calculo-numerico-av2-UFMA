@@ -1,0 +1,43 @@
+"""Metodos de ajuste de curvas por minimos quadrados."""
+
+from .metodos import (
+    ajuste_exponencial,
+    ajuste_geometrico,
+    ajuste_hiperbolico,
+    ajuste_polinomial,
+    ajuste_reta,
+    avaliar_exponencial,
+    avaliar_geometrico,
+    avaliar_hiperbolico,
+    avaliar_modelo,
+    avaliar_polinomio,
+    avaliar_reta,
+    coeficiente_determinacao,
+    ler_pontos_csv,
+    minimos_quadrados,
+    montar_equacoes_normais,
+    residuos,
+    resolver_sistema_linear,
+    soma_quadrados_erros,
+)
+
+__all__ = [
+    "ajuste_exponencial",
+    "ajuste_geometrico",
+    "ajuste_hiperbolico",
+    "ajuste_polinomial",
+    "ajuste_reta",
+    "avaliar_exponencial",
+    "avaliar_geometrico",
+    "avaliar_hiperbolico",
+    "avaliar_modelo",
+    "avaliar_polinomio",
+    "avaliar_reta",
+    "coeficiente_determinacao",
+    "ler_pontos_csv",
+    "minimos_quadrados",
+    "montar_equacoes_normais",
+    "residuos",
+    "resolver_sistema_linear",
+    "soma_quadrados_erros",
+]

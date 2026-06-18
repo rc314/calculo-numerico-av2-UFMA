@@ -1,11 +1,15 @@
 import unittest
 
 from src.interpolacao import (
+    coeficientes_spline_cubica_natural,
     diferencas_divididas,
     diferencas_finitas,
     gregory_newton,
     lagrange,
     newton,
+    segundas_derivadas_spline_cubica_natural,
+    spline_cubica_natural,
+    spline_linear,
 )
 
 
@@ -40,6 +44,38 @@ class TestInterpolacao(unittest.TestCase):
         self.assertEqual([tabela[i][1] for i in range(3)], [7.0, 8.0, 11.0])
         self.assertEqual([tabela[i][2] for i in range(2)], [1.0, 3.0])
         self.assertEqual(tabela[0][3], 2.0)
+
+    def test_spline_linear_reproduz_exemplo_da_aula(self):
+        pontos = [(1.0, 1.0), (2.0, 2.0), (5.0, 3.0), (7.0, 2.5)]
+
+        self.assertAlmostEqual(spline_linear(pontos, 1.5), 1.5)
+        self.assertAlmostEqual(spline_linear(pontos, 3.5), 2.5)
+        self.assertAlmostEqual(spline_linear(pontos, 6.0), 2.75)
+
+    def test_splines_resolvem_dataset_do_laser(self):
+        pontos = [(0.0, 2.5), (1.0, 4.5), (2.0, 3.0), (3.0, 6.0)]
+
+        self.assertAlmostEqual(spline_linear(pontos, 1.5), 3.75)
+        self.assertAlmostEqual(spline_cubica_natural(pontos, 1.5), 3.675)
+        segundas = segundas_derivadas_spline_cubica_natural(pontos)
+        for obtido, esperado in zip(segundas, [0.0, -7.4, 8.6, 0.0]):
+            self.assertAlmostEqual(obtido, esperado)
+
+    def test_spline_cubica_natural_mantem_suavidade_nos_nos(self):
+        pontos = [(0.0, 2.5), (1.0, 4.5), (2.0, 3.0), (3.0, 6.0)]
+        trechos = coeficientes_spline_cubica_natural(pontos)
+
+        for i in range(len(trechos) - 1):
+            esquerda = trechos[i]
+            direita = trechos[i + 1]
+            x_no = esquerda.x_final
+
+            self.assertAlmostEqual(esquerda.avaliar(x_no), direita.avaliar(x_no))
+            self.assertAlmostEqual(esquerda.derivada_primeira(x_no), direita.derivada_primeira(x_no))
+            self.assertAlmostEqual(esquerda.derivada_segunda(x_no), direita.derivada_segunda(x_no))
+
+        self.assertAlmostEqual(trechos[0].derivada_segunda(trechos[0].x_inicial), 0.0)
+        self.assertAlmostEqual(trechos[-1].derivada_segunda(trechos[-1].x_final), 0.0)
 
 
 if __name__ == "__main__":
