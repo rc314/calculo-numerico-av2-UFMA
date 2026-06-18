@@ -13,12 +13,12 @@ pequenos, cada um com um método ou avanço bem definido.
 - [x] Implementar spline linear.
 - [x] Implementar spline cúbica natural.
 - [x] Implementar ajuste linear por mínimos quadrados.
-- [ ] Implementar regra 3/8 de Simpson.
-- [ ] Implementar trapézios repetidos.
-- [ ] Implementar regra 1/3 de Simpson.
-- [ ] Implementar quadratura de Gauss para `n = 2` e `n = 3`.
-- [ ] Registrar as saídas dos códigos em `docs/resultados_codigo.txt`.
-- [ ] Revisar README, exemplos de execução e resultados finais.
+- [x] Implementar regra 3/8 de Simpson.
+- [x] Implementar trapézios repetidos.
+- [x] Implementar regra 1/3 de Simpson.
+- [x] Implementar quadratura de Gauss para `n = 2` e `n = 3`.
+- [x] Registrar as saídas dos códigos em `docs/resultados_codigo.txt`.
+- [x] Revisar README, exemplos de execução e resultados finais.
 
 ## Organização dos commits
 

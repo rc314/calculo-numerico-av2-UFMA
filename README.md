@@ -6,13 +6,9 @@ Disciplina: Cálculo Numérico
 Professor: Lucas Reis  
 Instituição: UFMA
 
-Este repositório reúne o material da 2ª avaliação de Cálculo Numérico. A atividade
-será construída aos poucos, com os métodos sendo implementados conforme os assuntos
-forem passados em sala.
-
-Por enquanto, a estrutura inicial já está separada com datasets, documentação e
-pastas para os códigos. A parte dos algoritmos fica para as próximas etapas, para
-acompanhar a ordem das aulas e manter o histórico de commits organizado.
+Este repositório reúne o material da 2ª avaliação de Cálculo Numérico. O projeto
+foi construído de forma incremental, com datasets, documentação, implementações
+próprias dos métodos e testes automatizados.
 
 ## Regras principais
 
@@ -44,7 +40,7 @@ Objetivo inicial:
 
 ## Situação atual
 
-A parte de interpolação e ajuste de curvas já contém:
+As implementações atuais já contêm:
 
 - Lagrange;
 - Newton por diferenças divididas;
@@ -52,12 +48,17 @@ A parte de interpolação e ajuste de curvas já contém:
 - spline linear;
 - spline cúbica natural;
 - mínimos quadrados com ajuste linear, polinomial e modelos linearizados.
+- regra 3/8 de Simpson;
+- trapézios simples e repetidos;
+- regra 1/3 de Simpson;
+- quadratura de Gauss-Legendre com 1, 2 e 3 pontos.
 
 Comandos principais:
 
 ```bash
 python -m src.interpolacao.executar_interpolacao
 python -m src.ajuste_curvas.executar_ajuste_curvas
+python -m src.integracao.executar_integracao
 python -m unittest discover -s tests -v
 ```
 

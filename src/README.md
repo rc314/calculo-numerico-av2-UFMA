@@ -8,11 +8,12 @@ A organização inicial é por assunto:
 - `ajuste_curvas/`
 - `integracao/`
 
-Os codigos entram aqui conforme cada metodo for apresentado em aula. A pasta de
-integracao ainda fica reservada para as proximas etapas da AV2.
+Os códigos entram aqui conforme cada método for apresentado em aula.
 
 Implementacoes atuais:
 
 - interpolacao polinomial;
 - splines linear e cubica natural;
 - ajuste de curvas por minimos quadrados.
+- integração por trapézios e Simpson;
+- quadratura de Gauss-Legendre.

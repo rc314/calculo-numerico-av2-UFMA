@@ -25,11 +25,14 @@ GitHub. A entrega vai crescer aos poucos, acompanhando os conteúdos vistos em s
 
 ## Situação atual do repositório
 
-Por enquanto, a base do projeto está pronta:
+O projeto contém os sete problemas previstos, organizados por assunto:
 
 - datasets separados por problema;
-- documentação inicial;
-- área de código organizada por assunto;
-- arquivo de dependências indicando que o projeto deve usar apenas recursos nativos.
+- interpolação polinomial e splines;
+- ajuste de curvas por mínimos quadrados;
+- integração por Newton-Cotes e quadratura de Gauss;
+- executores que exibem os cálculos e resultados;
+- testes automatizados para conferir propriedades e valores conhecidos;
+- resultados registrados em `docs/resultados_codigo.txt`.
 
-A implementação dos algoritmos entra depois, conforme cada método for visto em sala.
+Todos os algoritmos usam apenas estruturas nativas e a biblioteca padrão do Python.
